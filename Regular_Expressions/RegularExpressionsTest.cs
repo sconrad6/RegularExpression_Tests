@@ -22,7 +22,7 @@ namespace Regular_Expressions
             string userWebsite = Console.ReadLine();
 
             NameValidator name1 = new NameValidator(userName);
-            Console.WriteLine(name1.IsValid());
+            Console.WriteLine(name1.UserNameValidator());
 
             EmailValidator email1 = new EmailValidator(userEmail);
             Console.WriteLine(email1.AllValid());
@@ -36,5 +36,15 @@ namespace Regular_Expressions
             WebsiteValidator website1 = new WebsiteValidator(userWebsite);
             Console.WriteLine(website1.IsValid());
         }
+
+        //public static string UseRegex(string input, string regexInput)
+        //{
+        //    bool isValid = Regex.IsMatch(input, regexInput);
+        //    if (isValid)
+        //    {
+        //        return "Valid";
+        //    }
+        //    return "Invalid";
+        //}
     }
 }
